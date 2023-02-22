@@ -1,0 +1,67 @@
+body {
+   background-color: rgb(0, 35, 35);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.wrapper {
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 35px;
+   width: 1200px;
+   height: 100%;
+
+   .input_text {
+      width: 300px;
+      height: 60px;
+      font-size: 26px;
+      text-align: center;
+      padding: 10px;
+      margin: 15px;
+      border-radius: 50px;
+      background-color: rgb(197, 223, 3);
+   }
+
+   .message {
+      display: block;
+      padding: 5px;
+      margin: 0 auto;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      height: 150px;
+      font-size: 28px;
+      border: 1px solid rgb(120, 76, 240);
+      background-color: rgb(89, 72, 235);
+      border-radius: 5px;
+   }
+
+   .buttonRun {
+      width: 200px;
+      height: 100px;
+      font-size: 46px;
+      text-align: center;
+      padding: 10px;
+      margin: 15px;
+      border-radius: 20px;
+      background-color: rgb(147, 38, 4);
+   }
+
+   .buttonClear {
+      width: 200px;
+      height: 100px;
+      font-size: 46px;
+      text-align: center;
+      padding: 10px;
+      margin: 15px;
+      border-radius: 20px;
+      background-color: rgb(3, 180, 85);
+   }
+
+}
