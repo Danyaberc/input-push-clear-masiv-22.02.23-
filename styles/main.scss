@@ -65,3 +65,27 @@ body {
    }
 
 }
+
+.genderselect {
+   width: 300px;
+   height: 100px;
+   background-color: rgb(15, 177, 10);
+   font-size: 26px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 15px;
+
+}
+
+.img {
+   width: 50px;
+   height: 50px;
+
+}
+
+.txt1 {
+   font-size: 25px;
+   color: black;
+}
