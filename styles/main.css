@@ -36,7 +36,7 @@ body {
   height: 150px;
   font-size: 28px;
   border: 1px solid rgb(120, 76, 240);
-  background-color: rgb(89, 72, 235);
+  background-color: rgb(105, 98, 110);
   border-radius: 5px;
 }
 .wrapper .buttonRun {
@@ -80,4 +80,8 @@ body {
 .txt1 {
   font-size: 25px;
   color: black;
+}
+
+.li {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

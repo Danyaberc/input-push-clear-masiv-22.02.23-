@@ -20,38 +20,42 @@ let genimg = [
 
 
 btnPush.addEventListener('click', () => {
-   let name = inp.value
-   if (gender.value === "male") {
+   let name = (inp.value);
+   if (inp.value === '') {
+      return
+   }
+   else if (gender.value === 'male') {
       html.push({ name: inp.value, image: genimg[0].image });
       render()
       return
    }
-   else if (gender.value === "female") {
+   else if (gender.value === 'female') {
       html.push({ name: inp.value, image: genimg[1].image });
       render()
       return
    }
-   else if (gender.value === "other") {
-      html.push({ name: inp.value, image: genimg[1].image });
+   else if (gender.value === 'other') {
+      html.push({ name: inp.value, image: genimg[2].image });
       render()
       return
    }
 
 })
+const render = () => {
+   const newhtml = html.map((item) => {
+      structhtml = `<li class="li">${item.name}<img class="img" src="${item.image}"></li>`
+      return structhtml;
+   })
+
+   blockname.innerHTML = newhtml.join('');
+}
 
 btnClear.addEventListener('click', () => {
    html.splice(0)
    blockname.innerHTML = '';
 })
 
-const render = () => {
-   const newhtml = html.map((item) => {
-      const structhtml = `<li class="li">${item.name}<img class="img" src="${item.image}"></li>`
-      return structhtml;
-   })
 
-   blockname.innerHTML = html.join('');
-}
 
 
 
